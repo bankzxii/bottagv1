@@ -18,10 +18,7 @@ from googletrans import Translator
 botStart = time.time()
 #==============================================================================#
 #line = LINE()
-#line = LINE("Email","Passwd")
-line = LINE('')
-line.log("Auth Token : " + str(line.authToken))
-line.log("Timeline Token : " + str(line.tl.channelAccessToken))
+line = LINE("bank.thanarach@gmail.com","Muangmit0")
 
 #ki = LINE()
 #ki.log("Auth Token : " + str(ki.authToken))
@@ -96,7 +93,7 @@ settings = {
     "pnharfbot": {},
     "pname": {},
     "pro_name": {},
-    "message":"บัญชีนี้ได้การป้องกันโดย แม้คนายมันหล่อ ระบบได้ทำการบล็อคคุณอัตโนมัติ",
+    "message":"บัญชีนี้ได้การป้องกันโดย POPE นายมันหล่อ ระบบได้ทำการบล็อคคุณอัตโนมัติ",
     "comment":"Thanks for add me",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -250,7 +247,7 @@ def sendMessageWithMention(to, lineMID):
  
 def myhelp():
     myHelp = """╔══════════════┓
-╠        AssmaxBotline
+╠        BZBotline
 ╚══════════════┛
 ╔═════════════════════┓
 ╠❋►คำสั่ง = คำสั่ง
@@ -267,7 +264,7 @@ def myhelp():
     return myHelp
 
 def listgrup():
-    listGrup =  """►คำสั่งตั้งค่า⍣Assmax⍣
+    listGrup =  """►คำสั่งตั้งค่า⍣BZ⍣
 ╔══════════════════════┓
 ╠❋►เปิดเข้า ➠เข้ากลุ่มออโต้
 ╠❋►ปิดเข้า ➠ปิดเข้ากลุ่มออโต้
@@ -304,7 +301,7 @@ def listgrup():
     return listGrup
 
 def socmedia():
-    socMedia = """❋►คำสั่งแทค⍣Assmax⍣
+    socMedia = """❋►คำสั่งแทค⍣BZ⍣
 ╔═════════════════════┓
 ╠❋►คท @ ➠ แทคคนที่จะเอาคท
 ╠❋►มิด @  ➠ ลงmidคนอื่น
@@ -325,18 +322,18 @@ def socmedia():
     return socMedia
     
 def helpset():
-    helpSet = """❋►คำสั่ง⍣BOTTAGBY:Masmax⍣
+    helpSet = """❋►คำสั่ง⍣BOTTAGBY:BZ⍣
 ♕• ══════════════•♛
 ▶◐tag แทคคนในกลุ่ม
 ▶◐รีบอท เลิกเล่น
 †
-╰SELFBOTBy.Masmax
+╰SELFBOTBy.BZ
 
 """
     return helpSet 
 
 def helpkicker():
-    helpKicker = """คำสั่งค้นหา⍣Assmax⍣
+    helpKicker = """คำสั่งค้นหา⍣BZ⍣
 ╔════════════════════┓
 ╠❋► พูด ข้อความ ➠ สั่งสิริพูด
 ╠❋► ยูทูป ข้อความ ➠ ค้นหาในยูทูป
@@ -347,7 +344,7 @@ def helpkicker():
     return helpKicker
     
 def helpsetting():
-    helpSetting = """คำสั่งกลุ่ม⍣Assmax⍣
+    helpSetting = """คำสั่งกลุ่ม⍣BZ⍣
 ╔══════════════════┓
 ╠❋► กลุ่ม ➠ ข้อมูลกลุ่ม
 ╠❋► ไอดีกลุ่ม ➠ไอดีห้อง
@@ -370,7 +367,7 @@ def helpsetting():
     return helpSetting
 
 def helptexttospeech():
-    helpTextToSpeech =   """❋►คำสั่งเลียนแบบ⍣Assmax⍣
+    helpTextToSpeech =   """❋►คำสั่งเลียนแบบ⍣BZ⍣
 ❇ เลียนแบบ on/off 
 ❇ เลียนแบบ 
 ❇ เพิ่มเลียนแบบ (@) 
@@ -378,7 +375,7 @@ def helptexttospeech():
     return helpTextToSpeech
     
 def helplanguange():
-    helpLanguange =    """คำสั่งล่องหน⍣Assmax⍣
+    helpLanguange =    """คำสั่งล่องหน⍣BZ⍣
 ℹ!แทค
 ℹ!มิด
 ℹ!คท"""
@@ -610,9 +607,9 @@ def lineBot(op):
                             mc += "◉ " + line.getContact(mi_d).displayName + "\n"
                         line.sendMessage(to, mc)              
                 elif text.lower() == '.เทส':
-                    ki.sendMessage(to, "บอทแม้คนายมันหล่อยังอยู่ครับ")
+                    ki.sendMessage(to, "บอทBZนายมันหล่อยังอยู่ครับ")
                 elif text.lower() == 'เทส':
-                    line.sendMessage(to, "ท่าถึง100นั้นเเละความหล่อแม้คกำลังโหลด:▒...0%")
+                    line.sendMessage(to, "ท่าถึง100นั้นเเละความหล่อBZกำลังโหลด:▒...0%")
                     line.sendMessage(to, "█▒... 10.0%")
                     line.sendMessage(to, "██▒... 20.0%")
                     line.sendMessage(to, "███▒... 30.0%")
@@ -623,7 +620,7 @@ def lineBot(op):
                     line.sendMessage(to, "████████▒... 80.0%")
                     line.sendMessage(to, "█████████▒... 90.0%")
                     line.sendMessage(to, "███████████..100.0%")
-                    line.sendMessage(to, " แม้คหล่อนะยังอยู่ครับ✔")
+                    line.sendMessage(to, " BZหล่อนะยังอยู่ครับ✔")
                 elif msg.text.lower() == ".ออน":
                     line.sendMessage(msg.to,(str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[1].split(":")[0]+" ชั่วโมง " if "days" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[1].split(":")[0]+" ชั่วโมง " if "day" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(":")[0]+" ชั่วโมง ")+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[1]+" นาที "+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[2]+" วินาที")               
                 elif "คท " in msg.text:
@@ -723,7 +720,7 @@ def lineBot(op):
                             pass
                 elif text.lower() == 'sp':
                     start = time.time()
-                    line.sendMessage(to,"ความเร็วของ แม้ค...")
+                    line.sendMessage(to,"ความเร็วของ BZ...")
                     elapsed_time = time.time() - start
                     line.sendMessage(to,format(str(elapsed_time)))	
                 elif text.lower() == 'รีบอท':
@@ -734,7 +731,7 @@ def lineBot(op):
                     timeNow = time.time()
                     runtime = timeNow - botStart
                     runtime = format_timespan(runtime)
-                    line.sendMessage(to, "Assmax\n""ระยะเวลาการทำงานของบอท {}".format(str(runtime)))
+                    line.sendMessage(to, "BZ\n""ระยะเวลาการทำงานของบอท {}".format(str(runtime)))
                 elif text.lower() == 'บอท':
                     try:
                         arr = []
@@ -744,14 +741,14 @@ def lineBot(op):
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
                         blockedlist = line.getBlockedContactIds()
-                        ret_ = "╔══[  Assmax ]" 
+                        ret_ = "╔══[  BZ ]" 
                         ret_ += "\n╠🌟⏩ ชื่อ ═ {}".format(contact.displayName)
                         ret_ += "\n╠🌟⏩ กลุ่ม ═ {}".format(str(len(grouplist)))
                         ret_ += "\n╠🌟⏩ เพื่อน ═ {}".format(str(len(contactlist)))
                         ret_ += "\n╠🌟⏩ บล็อค ═ {}".format(str(len(blockedlist)))
                         ret_ += "\n╠══[สถานะ]"
                         ret_ += "\n╠🌟⏩ ผู้สร้าง ═ {}".format(creator.displayName)
-                        ret_ += "\n╚══[  Assmax ]"
+                        ret_ += "\n╚══[  BZ ]"
                         line.sendContact(to, owner)
                         line.sendMessage(to, str(ret_))
                     except Exception as e:
@@ -786,7 +783,7 @@ def lineBot(op):
                         else: ret_ += "\n╠🔀 แสดงภาพคนแทค ✘ "
                         if settings["detectMention"] == True: ret_ += "\n╠❂☞ แสดงติ้กคนแทค ✔"
                         else: ret_ += "\n╠🔀 แสดงติ้กคนแทค ✘ "
-                        ret_ += "\n╚════[ สถานะ Assmax]═════┛"
+                        ret_ += "\n╚════[ สถานะ BZ]═════┛"
                         line.sendMessage(to, str(ret_))
                     except Exception as e:
                         line.sendMessage(msg.to, str(e))
@@ -1105,7 +1102,7 @@ def lineBot(op):
                         gPending = str(len(group.invitee))
                     if group.preventedJoinByTicket == True:
                         gQr = "ปิด"
-                        gTicket = "Assmax"
+                        gTicket = "BZ"
                     else:
                         gQr = "Terbuka"
                         gTicket = "https://line.me/R/ti/g/{}".format(str(line.reissueGroupTicket(group.id)))
@@ -1583,7 +1580,7 @@ def lineBot(op):
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.displayName)
                         num=(num+1)
-                    msgs+="\n════Assmax════\n\nจำนวน : %i" % len(kontak)
+                    msgs+="\n════BZ════\n\nจำนวน : %i" % len(kontak)
                     line.sendMessage(receiver, msgs)
                 elif text.lower() == 'tagall':
                     group = line.getGroup(msg.to)
@@ -3086,7 +3083,7 @@ def lineBot(op):
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
                         r = web.get("https://www.youtube.com/results", params = params)
                         soup = BeautifulSoup(r.content, "html.parser")
-                        ret_ = "╔══[ ผลการค้นหาของ Assmax ]"
+                        ret_ = "╔══[ ผลการค้นหาของ BZ ]"
                         datas = []
                         for data in soup.select(".yt-lockup-title > a[title]"):
                             if "&lists" not in data["href"]:
@@ -3128,7 +3125,7 @@ def lineBot(op):
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.displayName)
                         num=(num+1)
-                    msgs+="\nAssmax\n\nTotal Teman : %i" % len(kontak)
+                    msgs+="\nBZ\n\nTotal Teman : %i" % len(kontak)
                     line.sendMessage(msg.to, msgs)
 
                 elif msg.text in ["Blocklist"]: 
@@ -3865,11 +3862,11 @@ def lineBot(op):
                         else:
                             line.sendMessage(msg.to,"รายชื่อผู้ติดดำ")
                             num=1
-                            msgs="══════════รายชื่อ Assmax═════════"
+                            msgs="══════════รายชื่อ BZ═════════"
                             for mi_d in settings["blacklist"]:
                                 msgs+="\n[%i] %s" % (num, line.getContact(mi_d).displayName)
                                 num=(num+1)
-                            msgs+="\n══════════รายชื่อ Assmax═════════\n\nTotal Blacklist :  %i" % len(settings["blacklist"])
+                            msgs+="\n══════════รายชื่อ BZ═════════\n\nTotal Blacklist :  %i" % len(settings["blacklist"])
                             line.sendMessage(msg.to, msgs)
 #=======================================================================================
                 elif msg.text.lower().startswith("urban "):
@@ -4115,10 +4112,10 @@ def lineBot(op):
                                           #sendMessageWithMention(to, contact.mid)
                                           line.sendMessage(msg.to, None, contentMetadata={"STKID":"51626512","STKPKGID":"11538","STKVER":"1"}, contentType=7)
                                           break
-                if msg.text in ["tag"]:
+                if msg.text in ["แทค"]:
                     line.sendText(msg.to,"แทค")
                 if msg.text in ["1000sduj"]:
-                    line.sendText(msg.to,"แรงขนาดนี้ เหมือนความหล่อของแม้ค👍")
+                    line.sendText(msg.to,"แรงขนาดนี้ เหมือนความหล่อของBZ👍")
                 if msg.text in ["6780gd"]:
                     line.sendText(msg.to,"ยังเลย รอคนมาป้อนอยู่!!.")
                 if msg.text in ["555100mn"]:

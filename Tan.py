@@ -18,10 +18,7 @@ from googletrans import Translator
 botStart = time.time()
 #==============================================================================#
 #line = LINE()
-#line = LINE("Email","Passwd")
-line = LINE('')
-line.log("Auth Token : " + str(line.authToken))
-line.log("Timeline Token : " + str(line.tl.channelAccessToken))
+line = LINE("bankzxii@gmail.com","Muangmit0")
 
 #ki = LINE()
 #ki.log("Auth Token : " + str(ki.authToken))
@@ -38,7 +35,7 @@ line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 #ks = LINE()
 #ks.log("Auth Token : " + str(ks.authToken))
 #ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
-print ("Login Succes")
+print ("Login Success")
 
 lineMID = line.profile.mid
 lineProfile = line.getProfile()
